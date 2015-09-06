@@ -27,6 +27,12 @@ Then place the script on the system and wait for the user to log in. Make sure t
 
 During one pentest we purposfully downed a key service on the compromised host in order to force the sysadmin to login and use sudo to restart it. Compromising a system on the network is nice. Compromising the sysadmins credentials themselves is even better.
 
+**How to fix?**
+
+I know the blue team readers are probablly wondering how to shut this off. I don't know of a way to do that currently. IMHO the correct fix would be for the sudoers file to specify a new "Defaults" entry type called askpass. Then you could allow for askpass functionallity on your user's graphical desktop machines, yet still deny it's use entirely on production servers. (Of course, the sysads should have different credentials for these different domains, but that is a separate issue.) The theoretical sudoers entry would probablly look something like this:
+
+	Defaults !askpass
+
 ## A Quick Note on Ethics ##
 
 I write and release these tools with the intention of educating the larger [IT](http://en.wikipedia.org/wiki/Information_technology) community and empowering legitimate pentesters. If I can write these tools in my spare time, then rest assured that the dedicated malicious actors have already developed versions of their own.
