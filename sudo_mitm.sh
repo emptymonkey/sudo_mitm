@@ -14,9 +14,8 @@
 #		output. The value of askpass may be overridden by the SUDO_ASKPASS
 #		environment variable.
 #
-#	This is only useful when you have execution as a target user, or write privs
-#	to thier home directory. (E.g. Pwnd webserver running with the sysadmins uid.)
-#	In this case, this tool allows you to harvest the sysadmin's credentials.
+#	This script assumes you have the ability to write to the target users home
+# directory, specifically to their startup files. (e.g. ~/.profile)
 #
 ################################################################################
 
