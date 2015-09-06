@@ -6,10 +6,11 @@ A simple tool for harvesting sysadmin credentials in Linux
 
 This is a simple shell script that takes advantage of the SUDO\_ASKPASS functionallity in _sudo_ to grab a target users password and forward it on with the help of netcat. From the _sudo_ man page:
 
-	Normally, if sudo requires a password, it will read it from the user's terminal. If the -A 
-	(askpass) option is specified, a (possibly graphical) helper program is executed to read the 
-	user's password and output the password to the standard output. If the SUDO_ASKPASS environment
-	variable is set, it specifies the path to the helper program.
+	Normally, if sudo requires a password, it will read it from the user's terminal. If
+	the -A (askpass) option is specified, a (possibly graphical) helper program is 
+	executed to read the user's password and output the password to the standard output.
+	If the SUDO_ASKPASS environment	variable is set, it specifies the path to the helper
+	program.
 
 **Pre-requisite**
 
