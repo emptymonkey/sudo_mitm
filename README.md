@@ -14,7 +14,7 @@ This is a simple shell script that takes advantage of the SUDO\_ASKPASS function
 
 **Pre-requisite**
 
-This tool requires the ability to write to the target users home directory.
+This tool requires the ability to write to the target users home directory. As such, this tool falls entirely under the "post-exploitation" catagory. (Sorry, no "hella 1337 hax" here kids.)
 
 **Usage**
 
