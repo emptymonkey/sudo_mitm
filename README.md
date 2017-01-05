@@ -14,7 +14,7 @@ This is a simple shell script that takes advantage of the SUDO\_ASKPASS function
 
 **Pre-requisite**
 
-This tool requires the ability to write to the target users home directory. As such, this tool falls entirely under the "post-exploitation" catagory.
+This tool requires the ability to write to the target users home directory. As such, this tool falls entirely within the "post-exploitation" catagory.
 
 **Usage**
 
@@ -29,6 +29,6 @@ During one pentest we purposfully downed a key service on the compromised host i
 
 **How to fix?**
 
-I know the blue team readers are probablly wondering how to shut this off. I don't know of a way to do that currently. IMHO the correct fix would be for the sudoers file to specify a new "Defaults" entry type called askpass. Then you could allow for askpass functionallity on your user's graphical desktop machines, yet still deny it's use entirely on production servers. (Of course, the sysads should have different credentials for these different domains, but that is a separate issue.) The theoretical sudoers entry would probablly look something like this:
+I don't know of a way to do fix this currently. IMHO the correct fix would be for the sudoers grammer to specify a new "Defaults" entry type called askpass that allows you to disable this feature. This would then allow for askpass functionallity on your user's graphical desktop machines, yet still deny it's use entirely on production servers. (Of course, the sysads should have different credentials for these different domains, but that is a separate issue.) If this feature were implemented it would probablly look something like this:
 
 	Defaults !askpass
