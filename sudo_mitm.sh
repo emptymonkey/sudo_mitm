@@ -2,10 +2,10 @@
 
 ################################################################################
 # sudo_mitm :	2013-03-20
-#		emptymonkey's simple tool for harvesting sysadmin credentials.
+#	  emptymonkey's simple tool for harvesting sysadmin credentials.
 #
-#	From the sudoers man page:
-#	askpass
+# From the sudoers man page:
+# askpass
 #   The askpass option specifies the fully qualified path to a helper program
 #	  used to read the user's password when no terminal is available. This may be
 #	  the case when sudo is executed from a graphical (as opposed to text-based)
