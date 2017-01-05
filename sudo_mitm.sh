@@ -6,15 +6,15 @@
 #
 #	From the sudoers man page:
 #	askpass
-#		The askpass option specifies the fully qualified path to a helper program
-#		used to read the user's password when no terminal is available. This may be
-#		the case when sudo is executed from a graphical (as opposed to text-based)
-#		application. The program specified by askpass should display the argument
-#		passed to it as the prompt and write the user's password to the standard
-#		output. The value of askpass may be overridden by the SUDO_ASKPASS
-#		environment variable.
+#   The askpass option specifies the fully qualified path to a helper program
+#	  used to read the user's password when no terminal is available. This may be
+#	  the case when sudo is executed from a graphical (as opposed to text-based)
+#	  application. The program specified by askpass should display the argument
+#	  passed to it as the prompt and write the user's password to the standard
+#	  output. The value of askpass may be overridden by the SUDO_ASKPASS
+#	  environment variable.
 #
-#	This script assumes you have the ability to write to the target users home
+# This script assumes you have the ability to write to the target users home
 # directory, specifically to their startup files. (e.g. ~/.profile)
 #
 ################################################################################
